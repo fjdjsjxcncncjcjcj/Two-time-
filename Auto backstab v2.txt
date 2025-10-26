@@ -334,7 +334,7 @@ RunService.RenderStepped:Connect(function()
                     end
 
                     local elapsed = tick() - start
-                    if elapsed >= 0.5 then
+                    if elapsed >= 0.1 then
                         if connection then connection:Disconnect() end
                         return
                     end
